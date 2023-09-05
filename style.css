@@ -1,0 +1,22 @@
+@media (max-width: 399px) {
+  .buttonsz {
+    width: 40px !important;
+    height: 30px !important;
+    font-size: 8px !important;
+    text-align: left !important;
+    font-family: Arial, sans-serif !important;
+  }
+  .divwid {
+    width: 100px;
+  }
+}
+
+@media (max-width: 382px) {
+  .buttonsz {
+    width: 40px !important;
+    height: 30px !important;
+    font-size: 4px !important;
+    text-align: left !important;
+    font-family: Arial, sans-serif !important;
+  }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TODO by FARAZ</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <div
+          class="ms-2 col-12 col-lg-12 col-md-12 col-sm-12 border border-1 rounded-6 me-5"
+          style="
+            background: linear-gradient(
+              135deg,
+              rgba(255, 255, 255, 0.1),
+              rgba(255, 255, 255, 0)
+            );
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+          "
+        >
+          <span><p id="timee" class="text-end px-3"></p></span>
+          <h1 class="text-center">TODO LIST</h1>
+
+          <div class="row mt-5 px-5">
+            <div class="mx-2 col-11 col-sm-6 col-md-6 col-lg-8">
+              <div class="form-outline">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  id="desc"
+                />
+
+                <label class="form-label" for="desc">Enter a task here</label>
+              </div>
+            </div>
+
+            <div class="mt-1 col-4 col-lg-1 col-md-2 col-sm-3 mx-2">
+              <button
+                type="submit"
+                class="btn btn-warning btn-block"
+                onclick="pushList()"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+          <div class="row mt-5 text-center">
+            <div class="col-12 col-sm-11 col-md-11 col-lg-11 colform-outline">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>No.</th>
+                    <th>ToDo Items</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="tb4">
+                  <tr>
+                    <td colspan="5">Enter some Tasks to show here</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p class="text-end px-3">
+            Made with <i class="fa-regular fa-heart text-danger"></i> by Faraz
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MDB -->
+    <script src="app.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"
+    ></script>
+  </body>
+</html>
